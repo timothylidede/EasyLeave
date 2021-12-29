@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.MotionBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="hBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="savala.easyleave.employee.EmployeeStatusPending">
+    <children>
+        <AnchorPane style="-fx-background-color: transparent;">
+            <padding>
+                <Insets bottom="20.0" />
+            </padding>
+            <children>
+                <VBox style="-fx-background-color: #5865f2; -fx-background-radius: 100;" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+                    <children>
+                        <ImageView fx:id="applicationImage" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#applicationImage" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../javafx_images/icons8_application_window_48px.png" />
+                            </image>
+                            <VBox.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </VBox.margin>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </ImageView>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../javafx_images/icons8_data_pending_60px_1.png" />
+                            </image>
+                            <VBox.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </VBox.margin>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <effect>
+                                <MotionBlur radius="8.0" />
+                            </effect>
+                        </ImageView>
+                        <ImageView fx:id="myLeaveDays" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#myLeaveDays" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../javafx_images/icons8_timetable_60px.png" />
+                            </image>
+                            <VBox.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </VBox.margin>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </ImageView>
+                        <ImageView fx:id="enquiries" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#enquiries" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../javafx_images/icons8_questions_60px.png" />
+                            </image>
+                            <VBox.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </VBox.margin>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </ImageView>
+                    </children>
+                </VBox>
+            </children>
+        </AnchorPane>
+        <VBox HBox.hgrow="ALWAYS">
+            <children>
+                <HBox alignment="CENTER_LEFT" style="-fx-background-color: #5865f2;">
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                    <children>
+                        <Label text="Easy Leave" textFill="WHITE">
+                            <font>
+                                <Font name="Harlow Solid Italic" size="30.0" />
+                            </font>
+                        </Label>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../javafx_images/icons8_manager_60px_1.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fx:id="myAccount" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#myAccount" pickOnBounds="true" preserveRatio="true">
+                            <HBox.margin>
+                                <Insets left="70.0" />
+                            </HBox.margin>
+                            <image>
+                                <Image url="@../../../javafx_images/icons8_account_48px1.png" />
+                            </image>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </ImageView>
+                        <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
+                            <padding>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </padding>
+                            <children>
+                                <Button fx:id="back" mnemonicParsing="false" onMouseClicked="#goBack" style="-fx-background-color: #5865f2; -fx-text-fill: white; -fx-font-family: Quicksand; -fx-font-weight: bolder;" text="Back">
+                                    <graphic>
+                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../../javafx_images/icons8_back_128px.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                </Button>
+                            </children>
+                        </HBox>
+                    </children>
+                </HBox>
+                <HBox>
+                    <VBox.margin>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                    </VBox.margin>
+                    <children>
+                        <HBox fx:id="accepted" onMouseClicked="#accepted" prefHeight="40.0" prefWidth="233.0" style="-fx-background-color: #5865f2; -fx-background-radius: 5;">
+                            <children>
+                                <Label text="Accepted" textFill="WHITE">
+                                    <font>
+                                        <Font name="Bauhaus 93" size="15.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="20.0" top="8.0" />
+                                    </HBox.margin>
+                                </Label>
+                            </children>
+                            <HBox.margin>
+                                <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                            </HBox.margin>
+                        </HBox>
+                        <HBox prefWidth="233.0" style="-fx-background-color: #151928; -fx-background-radius: 8;">
+                            <children>
+                                <Label text="Pending" textFill="WHITE">
+                                    <font>
+                                        <Font name="Bauhaus 93" size="15.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="20.0" top="8.0" />
+                                    </HBox.margin>
+                                </Label>
+                            </children>
+                            <HBox.margin>
+                                <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                            </HBox.margin>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </HBox>
+                        <HBox fx:id="rejected" onMouseClicked="#rejected" prefWidth="233.0" style="-fx-background-color: #5865f2; -fx-background-radius: 8;">
+                            <children>
+                                <Label text="Rejected" textFill="WHITE">
+                                    <font>
+                                        <Font name="Bauhaus 93" size="15.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="20.0" top="8.0" />
+                                    </HBox.margin>
+                                </Label>
+                            </children>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <HBox.margin>
+                                <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                            </HBox.margin>
+                        </HBox>
+                    </children>
+                </HBox>
+                <AnchorPane style="-fx-background-color: #ffffff;" VBox.vgrow="ALWAYS">
+                    <children>
+                        <AnchorPane layoutX="35.0" layoutY="52.0" prefHeight="280.0" prefWidth="70.0" style="-fx-background-color: #5865f2;" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="45.0">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="45.0" layoutX="13.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../javafx_images/icons8_iphone_spinner_100px.png" />
+                           </image>
+                        </ImageView>
+                     </children></AnchorPane>
+                        <AnchorPane layoutX="90.0" layoutY="14.0" prefHeight="342.0" prefWidth="520.0" style="-fx-background-color: #151928;" AnchorPane.leftAnchor="90.0" AnchorPane.topAnchor="15.0">
+                     <children>
+                        <TableView fx:id="leave_table" layoutX="25.0" layoutY="36.0" prefHeight="270.0" prefWidth="470.0" stylesheets="@tableview.css">
+                          <columns>
+                              <TableColumn fx:id="leave_type" prefWidth="130.0" text="Leave Type" />
+                            <TableColumn fx:id="leave_start" prefWidth="130.0" text="Leave Start Date" />
+                              <TableColumn fx:id="leave_end" prefWidth="130.0" text="Leave End Date" />
+                              <TableColumn fx:id="leave_days" prefWidth="130.0" text="Days Requested" />
+                              <TableColumn fx:id="leave_status" prefWidth="130.0" text="Status" />
+                          </columns>
+                        </TableView>
+                     </children></AnchorPane>
+                        <AnchorPane layoutX="610.0" layoutY="45.0" prefHeight="280.0" prefWidth="70.0" style="-fx-background-color: #5865f2;" AnchorPane.leftAnchor="610.0" AnchorPane.topAnchor="45.0">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="45.0" layoutX="13.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../javafx_images/icons8_iphone_spinner_100px.png" />
+                           </image>
+                        </ImageView>
+                     </children></AnchorPane>
+                    </children>
+                </AnchorPane>
+            </children>
+            <padding>
+                <Insets left="10.0" />
+            </padding>
+        </VBox>
+    </children>
+</HBox>

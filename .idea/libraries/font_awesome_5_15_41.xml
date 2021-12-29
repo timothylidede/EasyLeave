@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="font-awesome-5.15.41">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/Downloads/font-awesome-5.15.4.jar!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/font-awesome-5.15.4.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/Downloads/font-awesome-5.15.4.jar!/" />
+    </JAVADOC>
+    <NATIVE>
+      <root url="jar://$USER_HOME$/Downloads/font-awesome-5.15.4.jar!/" />
+    </NATIVE>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Downloads/font-awesome-5.15.4.jar!/" />
+    </SOURCES>
+    <jarDirectory url="jar://$USER_HOME$/Downloads/font-awesome-5.15.4.jar!/" recursive="false" />
+    <jarDirectory url="jar://$USER_HOME$/Downloads/font-awesome-5.15.4.jar!/" recursive="false" type="SOURCES" />
+  </library>
+</component>

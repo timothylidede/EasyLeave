@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="hBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="savala.easyleave.manager.ManagerDashBoard">
+    <children>
+        <AnchorPane style="-fx-background-color: transparent;">
+            <children>
+                <VBox style="-fx-background-color: #EE204E; -fx-background-radius: 100;" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+                    <children>
+                        <ImageView fx:id="applicationImage" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#applicationImage" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../javafx_images/icons8_application_window_48px.png" />
+                            </image>
+                            <VBox.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </VBox.margin>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </ImageView>
+                        <ImageView fx:id="myEmployeesImage" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#myEmployeesImage" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../javafx_images/icons8_meeting_room_100px_2.png" />
+                            </image>
+                            <VBox.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </VBox.margin>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </ImageView>
+                        <ImageView fx:id="bonusDaysImage" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#bonusDaysImage" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../javafx_images/icons8_gift_60px_1.png" />
+                            </image>
+                            <VBox.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </VBox.margin>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </ImageView>
+                        <ImageView fx:id="enquiries" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#enquiries" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../javafx_images/icons8_questions_60px.png" />
+                            </image>
+                            <VBox.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </VBox.margin>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </ImageView>
+                    </children>
+                </VBox>
+            </children>
+            <padding>
+                <Insets bottom="20.0" />
+            </padding>
+        </AnchorPane>
+        <VBox style="-fx-background-color: #ffffff;" HBox.hgrow="ALWAYS">
+            <children>
+                <HBox alignment="CENTER_LEFT" prefHeight="71.0" prefWidth="732.0" style="-fx-background-color: #EE204E;">
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                    <children>
+                        <Label text="Easy Leave" textFill="WHITE">
+                            <font>
+                                <Font name="Harlow Solid Italic" size="30.0" />
+                            </font>
+                        </Label>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../javafx_images/icons8_manager_60px_1.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fx:id="myAccount" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#myAccount" pickOnBounds="true" preserveRatio="true">
+                            <HBox.margin>
+                                <Insets left="70.0" />
+                            </HBox.margin>
+                            <image>
+                                <Image url="@../../../javafx_images/icons8_account_48px1.png" />
+                            </image>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </ImageView>
+                        <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
+                            <padding>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </padding>
+                            <children>
+                                <Button fx:id="employeeLogout" mnemonicParsing="false" onMouseClicked="#employee_logout" style="-fx-background-color: #EE204E; -fx-text-fill: white; -fx-font-family: Quicksand; -fx-font-weight: bolder;" text="Logout">
+                                    <graphic>
+                                        <ImageView fx:id="close" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../../javafx_images/icons8_logout_rounded_left_52px_1.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                </Button>
+                            </children>
+                        </HBox>
+                    </children>
+                </HBox>
+                <HBox style="-fx-background-color: #ffffff;">
+                    <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                    </padding>
+                    <children>
+                        <Label style="-fx-font-family: Quicksand; -fx-font-weight: bolder;" text="Hello" textFill="#2e0000">
+                            <font>
+                                <Font size="25.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="first_name" style="-fx-font-family: Quicksand; -fx-font-weight: bolder;" text="Timothy" textFill="#2e0000">
+                            <font>
+                                <Font size="25.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="5.0" />
+                            </HBox.margin>
+                        </Label>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                            <HBox.margin>
+                                <Insets left="7.0" />
+                            </HBox.margin>
+                            <image>
+                                <Image url="@../../../javafx_images/icons8_hello_48px_1.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                    <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox style="-fx-background-color: #ffffff;">
+                    <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                    </padding>
+                    <children>
+                        <HBox fx:id="managerApplications" alignment="CENTER_LEFT" onMouseClicked="#managerApplications" style="-fx-background-color: #2e0000; -fx-background-radius: 15;">
+                            <children>
+                                <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../javafx_images/icons8_application_window_48px.png" />
+                                    </image>
+                                </ImageView>
+                                <Label text="APPLICATIONS" textFill="WHITE">
+                                    <font>
+                                        <Font name="Bauhaus 93" size="21.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="20.0" />
+                                    </HBox.margin>
+                                </Label>
+                            </children>
+                            <padding>
+                                <Insets bottom="30.0" left="60.0" right="60.0" top="30.0" />
+                            </padding>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </HBox>
+                        <HBox fx:id="myEmployees" alignment="CENTER_LEFT" onMouseClicked="#myEmployees" prefHeight="100.0" prefWidth="311.0" style="-fx-background-color: #2e0000; -fx-background-radius: 15;">
+                            <padding>
+                                <Insets bottom="20.0" left="50.0" right="50.0" top="20.0" />
+                            </padding>
+                            <children>
+                                <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                    <HBox.margin>
+                                        <Insets />
+                                    </HBox.margin>
+                                    <image>
+                                        <Image url="@../../../javafx_images/icons8_meeting_room_100px_2.png" />
+                                    </image>
+                                </ImageView>
+                                <Label text="MY EMPLOYEES" textFill="WHITE">
+                                    <font>
+                                        <Font name="Bauhaus 93" size="21.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="20.0" />
+                                    </HBox.margin>
+                                </Label>
+                            </children>
+                            <HBox.margin>
+                                <Insets left="50.0" />
+                            </HBox.margin>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </HBox>
+                    </children>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </HBox>
+                <HBox style="-fx-background-color: #ffffff;">
+                    <children>
+                        <HBox fx:id="bonusDays" alignment="CENTER_LEFT" onMouseClicked="#bonusDays" prefHeight="100.0" prefWidth="313.0" style="-fx-background-color: #2e0000; -fx-background-radius: 15;">
+                            <children>
+                                <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../javafx_images/icons8_gift_60px_1.png" />
+                                    </image>
+                                </ImageView>
+                                <Label text="BONUS" textFill="WHITE">
+                                    <font>
+                                        <Font name="Bauhaus 93" size="21.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="20.0" />
+                                    </HBox.margin>
+                                </Label>
+                            </children>
+                            <padding>
+                                <Insets bottom="30.0" left="90.0" right="90.0" top="30.0" />
+                            </padding>
+                            <HBox.margin>
+                                <Insets left="20.0" />
+                            </HBox.margin>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </HBox>
+                        <HBox fx:id="enquire" alignment="CENTER_LEFT" onMouseClicked="#enquire" style="-fx-background-color: #2e0000; -fx-background-radius: 15;">
+                            <padding>
+                                <Insets bottom="20.0" left="78.0" right="78.0" top="20.0" />
+                            </padding>
+                            <children>
+                                <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                    <HBox.margin>
+                                        <Insets />
+                                    </HBox.margin>
+                                    <image>
+                                        <Image url="@../../../javafx_images/icons8_questions_60px.png" />
+                                    </image>
+                                </ImageView>
+                                <Label text="ENQUIRIES" textFill="WHITE">
+                                    <font>
+                                        <Font name="Bauhaus 93" size="21.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="20.0" />
+                                    </HBox.margin>
+                                </Label>
+                            </children>
+                            <HBox.margin>
+                                <Insets left="50.0" />
+                            </HBox.margin>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </HBox>
+                    </children>
+                    <VBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                    </VBox.margin>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</HBox>
