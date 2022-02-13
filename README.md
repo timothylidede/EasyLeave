@@ -12,9 +12,9 @@ Line Managers in turn also have the ability to login and view all applications m
 
 * MySQL
 
-# What I Learned
+# Things Learned
 
-This was my first interaction with Java FX using SceneBuilder, that was pretty cool :)
+First interaction with Java FX using SceneBuilder, that was pretty cool :)
 
 * Java FX components
 * SceneBuilder Tools
